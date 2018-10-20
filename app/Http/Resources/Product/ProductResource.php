@@ -22,4 +22,10 @@ class ProductResource extends JsonResource
             'discount' =>$this->discount,
         ];
     }
+    public function with($request){
+        return [
+          'version' =>"1.0.0",
+          'Author_URL' =>url('http://bdimomin.me/')
+        ];
+    }
 }
